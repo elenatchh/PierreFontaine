@@ -22,10 +22,13 @@
     text-align: center;
     z-index: 1;
   }
+
   
 h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 1px;
   }
   
 p {
@@ -35,38 +38,39 @@ p {
 .text-containe {
     padding: 20px;
 }
-  
+
+
 #text {
     font-size: 3rem;
-    background-color: antiquewhite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
     color: black;
     opacity: 0;
   }
-  
 @media only screen and (max-width: 767px) {
-    .container {
-      height: auto;
-    }
-    
-    img {
-      position: static;
-      transform: none;
-    }
-    
-    .overlay {
-      position: static;
-      transform: none;
-    }
-    
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0.3em;
-    }
-    
-    p {
-      font-size: 1.2em;
-    }
+  .container {
+    height: auto;
   }
+  
+  img {
+    position: static;
+    transform: none;
+  }
+  
+  .overlay {
+    position: static;
+    transform: none;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.3em;
+  }
+  
+  p {
+    font-size: 1.2em;
+  }
+}
 
-  
-  
+

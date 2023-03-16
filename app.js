@@ -13,6 +13,21 @@ function fadeOut() {
   }
   setTimeout(fadeOut, 3000);
 
+let text1 = document.getElementById("text1");
+
+function fadeOut2() {
+    let opacity = 1;
+    const intervalId = setInterval(() => {
+      opacity -= 0.1;
+      text1.style.opacity = opacity;
+      if (opacity <= 0) {
+        clearInterval(intervalId);
+        text1.style.display = "none";
+      }
+    }, 100);
+  }
+  setTimeout(fadeOut2, 3000);
+
 let textElement = document.getElementById('text');
 let text = 'Le Héron sauvage';
 let index = 0;
